@@ -2,6 +2,8 @@
 
 Plays Piccolo's aura farming theme automatically whenever he appears on screen in Crunchyroll episodes, based on timestamps you define.
 
+![Picollo Aura Farming](icons/picollo-aura.jpg)
+
 ---
 
 ## SETUP (5 steps)
