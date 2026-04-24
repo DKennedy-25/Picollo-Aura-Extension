@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Piccolo's Aura Theme",
+  "version": "1.0.0",
+  "description": "Plays Piccolo's aura farming theme whenever he appears on Crunchyroll",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.crunchyroll.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.crunchyroll.com/watch/*"],
+      "js": ["timestamps.js", "content.js"],
+      "run_at": "document_idle"
+    }
+],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["aura.mp3", "aura.ogg"],
+      "matches": ["https://www.crunchyroll.com/*"]
+    }
+  ]
+}
